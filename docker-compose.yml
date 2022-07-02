@@ -1,0 +1,42 @@
+# docker-compose.yml
+version: '3.1'
+services:
+
+  mongo:
+    image: mongo
+    container_name: loratech_mongo
+    restart: always
+    environment: 
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=example
+      - MONGO_INITDB_DATABASE=loratech_db
+      - MONGO_INITDB_USERNAME=root
+      - MONGO_INITDB_PASSWORD=root
+      - DATABASE_URI=mongodb://mongodb:27017/loratech_db?authSource=admin**
+    volumes:
+      - /ubuntu/db/mongo
+    ports:
+      - 27017:27017
+  postgres:
+    image: postgres
+    container_name: loratech_postgres
+    restart: always
+    environment:
+        POSTGRES_DB: mydb
+        POSTGRES_USER: myuser
+        POSTGRES_PASSWORD: mypassword
+    ports:
+     - 5432:5432
+    volumes:
+       - ./data:/ubuntu/db/postgres
+        
+  web:
+        build: ./Flask
+        image: outlier_api
+        container_name: loratech_webapi
+        ports:
+            - "5002:5002"
+        volumes:
+            - .:/Flask
+        depends_on:
+            - postgres
