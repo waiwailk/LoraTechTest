@@ -1,3 +1,3 @@
 # LoraTechTest
 
-![Screenshot](Capture.JPG)
+![Screenshot](screenCap/Capture1.JPG)
