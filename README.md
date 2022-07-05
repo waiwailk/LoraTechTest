@@ -1,6 +1,21 @@
-# LoraTechTest
+# Loratech code test
 
-https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+I have prepared the 3 docker images:  according to question requirements.
+
+![Screenshot](screenCap/Containerls.jpeg)
 
 
-![Screenshot](screenCap/Capture1.JPG)
+
+To initialize all 3 docker images, we can type 
+
+    **docker-compose up - d**
+
+![Screenshot](screenCap/docker-composeUp.jpeg)
+
+
+
+
+
+
+
+
