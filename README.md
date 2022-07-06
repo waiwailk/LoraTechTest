@@ -6,7 +6,7 @@ The question is finding out any outlier stocks during 2020 with distinctive and 
 
 ![Screenshot](screenCap/LoraDBInfo.JPG)
 
-The application <b>gendata.py</b> will able to compare the HSI tri_return in 1-12 months and iterating each stock with all 12 month of the year 2020 to justify the outlier which is high (true) or low (false). As given by the question, the tri_return rate is calculated by a last day of month end/ last day of last month end -1 basis.
+The application <b>gendata.py</b> will able to compare the HSI tri_return in 1-12 months and iterating each stock with all 12 months of the year 2020 to justify the outlier which is high (true) or low (false). As given by the question, the tri_return rate is calculated by a last day of month end/ last day of last month end -1 basis.
 
 ![Screenshot](screenCap/gendata.JPG)
 
@@ -16,7 +16,7 @@ By the Docker cp and insert, The Docker PostgresSQL will contain those tri_retur
 
 ![Screenshot](screenCap/insertMongo.JPG)
 
-<ins><h2>Application and DB deoployment</h2></ins>
+<ins><h2>Application and DB deployment</h2></ins>
 
 I have prepared the 3 docker images: loratech_postgres, loratech_webapi, loratech_mongo according to question requirements. For the first step we should need to create a folder (e.g. LoraTechTest) and git clone all the source codes and data transform scripts here. 
 
@@ -121,6 +121,8 @@ For the error proof, the JSON response will get back the invalid month and empty
 
 ![Screenshot](screenCap/error_month.JPG)
 
+<ins><h2>Application close and clean</h2></ins>
+    
 - <h4> Shutdown the containers and clean up </h4>
 
 We can simply type <b> dock-compose down </b> and <b> docker rmi -f <image ID> </b>, <b> docker volume prune </b> to clean up everything in order reset everything.
