@@ -18,7 +18,7 @@ By the Docker cp and insert, The Docker PostgresSQL will contain those tri_retur
 
 <ins><h2>Application and DB deployment</h2></ins>
 
-I have prepared the 3 docker images: loratech_postgres, loratech_webapi, loratech_mongo according to question requirements. For the first step we should need to create a folder (e.g. LoraTechTest) and git clone all the source codes and data transform scripts in / or c:\. It will create a LoraTechTest folder.
+I have prepared the 3 docker images: loratech_postgres, loratech_webapi, loratech_mongo according to question requirements. For the first step we should need to create a folder (e.g. LoraTechTest) and git clone all the source codes and data transform scripts in / or c:\\. It will create a LoraTechTest folder.
 
 ![Screenshot](screenCap/Containerls.jpeg)
 
