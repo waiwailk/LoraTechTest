@@ -38,7 +38,7 @@ After that, it will print Postgres and Mongo file generated, and you will see ad
 
 ![Screenshot](screenCap/sqlfileresult.JPG)
 
-To place safe, you can diff check the dumpy verify data to check if it has been run correct by diff.
+To place safe, you can diff check the dumpy verify data to check if it has been run correct by diff. You may need to convert as Unix EOL file format if you find difference and running on windows.
 
 ![Screenshot](screenCap/diffdata.JPG)
 
