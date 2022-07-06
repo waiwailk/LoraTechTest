@@ -120,12 +120,7 @@ For the error proof, the JSON response will get back the invalid month and empty
 
 - <h4> Shutdown the containers and clean up </h4>
 
-We can simply type <b> dock-compose down </b> and <b> docker rmi -f <image ID> </b>, docker volume prune to clean up everything in order reset everything.
+We can simply type <b> dock-compose down </b> and <b> docker rmi -f <image ID> </b>, <b> docker volume prune </b> to clean up everything in order reset everything.
 
+![Screenshot](screenCap/cleanup.JPG)
 
-
-
-
-
-
-- 
